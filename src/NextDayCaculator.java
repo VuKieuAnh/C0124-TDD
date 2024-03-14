@@ -1,6 +1,9 @@
 public class NextDayCaculator {
 
+    public static final String CONCATE = "/";
+
     public static String getNextDay(int day, int month, int year) {
-        return "2/1/2018";
+        int dayOut = day+1;
+        return dayOut+ CONCATE + month+CONCATE+ year;
     }
 }

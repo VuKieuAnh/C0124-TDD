@@ -21,12 +21,15 @@ public class NextDayCaculatorTest {
     @DisplayName("case 31/1/2018")
     public void testDay31Month1Year2018(){
 //        chuan bi du lieu
+//        arrrge
         int day=31;
         int month = 1;
         int year = 2018;
         String expected = "1/2/2018";
+//        action
 //        Thuc thi phuong thuc
         String result = NextDayCaculator.getNextDay(day, month, year);
+//        assert
 //        Kiem tra ket qua
         assertEquals(expected, result);
     }

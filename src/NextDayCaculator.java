@@ -1,12 +1,18 @@
 public class NextDayCaculator {
 
     public static final String CONCATE = "/";
+    public static final int LASTOFMONTH = 31;
+    public static final int FISTOFMONTH = 1;
 
     public static String getNextDay(int day, int month, int year) {
         int dayOut = day+1;
-        if (day==31){
-            return 1+CONCATE + (++month) + CONCATE+ year;
+        String result = "";
+        if (day== LASTOFMONTH){
+            result= FISTOFMONTH +CONCATE + (++month) + CONCATE+ year;
         }
-        return dayOut+ CONCATE + month+CONCATE+ year;
+        else {
+            result = dayOut + CONCATE + month + CONCATE + year;
+        }
+        return result;
     }
 }
